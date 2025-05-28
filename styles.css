@@ -1,0 +1,192 @@
+/* styles for Library Reservation System */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #e0e7ff 0%, #f4f6fa 100%);
+    margin: 0;
+    padding: 0;
+}
+#app {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(42,93,159,0.13);
+    padding: 60px 32px 48px 32px;
+    min-height: 400px;
+}
+h2 {
+    color: #2a5d9f;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+form {
+    margin-bottom: 24px;
+}
+input[type="email"] {
+    border: 2px solid #b3c6e6;
+    background: #f7faff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    width: 260px;
+    transition: border 0.2s;
+    box-shadow: 0 1px 4px rgba(42,93,159,0.04);
+}
+input[type="email"]:focus {
+    border: 2px solid #2a5d9f;
+    outline: none;
+}
+button {
+    font-size: 1.08rem;
+    padding: 12px 28px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(42,93,159,0.08);
+    font-weight: 600;
+    background: linear-gradient(90deg, #2a5d9f 60%, #4e8ad1 100%);
+    color: #fff;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+button:hover {
+    background: #4e8ad1;
+    color: #fff;
+}
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+ul.book-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+ul.book-list li {
+    background: #f7faff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 18px 20px 14px 20px;
+    box-shadow: 0 1px 4px rgba(42,93,159,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+ul.book-list li .icon {
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+.book-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2a5d9f;
+}
+.message {
+    margin: 10px 0 0 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #e6f7e6;
+    color: #256029;
+    border: 1px solid #b7e4b7;
+    font-size: 0.98rem;
+    display: inline-block;
+}
+.error {
+    background: #ffe6e6;
+    color: #a94442;
+    border: 1px solid #f5c6cb;
+}
+#logoutBtn {
+    background: #fff;
+    color: #2a5d9f;
+    border: 1.5px solid #2a5d9f;
+    margin-top: 18px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+#logoutBtn:hover {
+    background: #2a5d9f;
+    color: #fff;
+}
+.card {
+    background: #f5f8ff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(42,93,159,0.10);
+    padding: 48px 36px 36px 36px;
+    margin-bottom: 28px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h2 {
+    color: #2a5d9f;
+    font-size: 2.1rem;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card label {
+    font-size: 1.08rem;
+    color: #2a5d9f;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+.card input[type="email"] {
+    border: 2px solid #b3c6e6;
+    background: #f7faff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    width: 260px;
+    transition: border 0.2s;
+    box-shadow: 0 1px 4px rgba(42,93,159,0.04);
+}
+.card input[type="email"]:focus {
+    border: 2px solid #2a5d9f;
+    outline: none;
+}
+.card .icon-btn {
+    font-size: 1.08rem;
+    padding: 12px 28px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(42,93,159,0.08);
+    font-weight: 600;
+    background: linear-gradient(90deg, #2a5d9f 60%, #4e8ad1 100%);
+    color: #fff;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card .icon-btn:hover {
+    background: #4e8ad1;
+    color: #fff;
+}
+.card #message {
+    margin-top: 18px;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    #app, .card {
+        padding: 18px 6vw;
+    }
+    .card input[type="email"] {
+        width: 100%;
+    }
+}
